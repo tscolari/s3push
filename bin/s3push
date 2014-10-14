@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/s3push'
+require_relative '../lib/s3push/command_line'
+S3push::CommandLine.new.run(ARGV, ARGF)
